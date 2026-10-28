@@ -22,7 +22,7 @@ Refined pastel storefront, larger product photography, clear category filters an
 Custom builders: 20 ice cream flavors, 15 juice ingredients and 15 smoothie ingredients.
 Ice cream scoop selection: 1–4. Juice and smoothie sizes: Small, Medium, Large.
 No fixed prices, promotional prices or per-product price labels.
-Final price depends on scoops or drink size and is confirmed by Chillos in chat.
+Final price depends on the complete selection and is agreed with Chillos on WhatsApp after the order is reviewed.
 Different portions and flavor combinations remain separate basket lines.
 Quantity controls, removal, browser basket storage, pickup/delivery fields and phone validation.
 WhatsApp message includes servings, scoop count or size, custom flavors and delivery details.

@@ -88,7 +88,7 @@ $('#order-form').addEventListener('submit',event=>{
   if(!name||phone.replace(/\D/g,'').length<9||(delivery&&!address)){toast('Enter your name, a valid phone number, and delivery address if needed.');return;}
   const lines=['Hello Chillos! I would like to request an order.','',`Name: ${name}`,`Phone: ${phone}`,'',...basket.map(line=>`${line.quantity} × ${lineDescription(line)}`),'',`Method: ${$('#fulfillment').value}`];
   if(delivery)lines.push(`Delivery details: ${address}`);if($('#notes').value.trim())lines.push(`Notes: ${$('#notes').value.trim()}`);
-  lines.push('','Please confirm flavor availability and the price for the selected scoops or drink sizes, delivery fee if applicable, and preparation time. Thank you!');
+  lines.push('','Please review my selections and discuss the final price with me on WhatsApp, based on the scoops, drink sizes, flavors, quantities, and delivery choice. Please also confirm flavor availability, any delivery fee, and preparation time. Thank you!');
   window.location.assign(`https://wa.me/250781281062?text=${encodeURIComponent(lines.join('\n'))}`);
 });
 $('#year').textContent=new Date().getFullYear();renderProducts();renderBasket();
