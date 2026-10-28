@@ -19,10 +19,12 @@ run("openProduct('orange-juice')");node('#detail-portion').value='Small';node('#
 run("openProduct('orange-juice')");node('#detail-portion').value='Large';node('#detail-quantity').value='1';node('#detail-add').handlers.click();assert.equal(run('basket.length'),2);
 run("openProduct('custom-ice')");node('#detail-portion').value='2 scoops';node('#detail-quantity').value='1';checked=[{value:'Vanilla'},{value:'Mango'},{value:'Chocolate'}];node('#detail-add').handlers.click();assert.equal(run('basket.length'),2);assert(node('#detail-error').textContent);
 checked=[{value:'Vanilla'},{value:'Mango'}];node('#detail-add').handlers.click();assert.equal(run('basket.length'),3);
-run("openProduct('custom-smoothie')");node('#detail-portion').value='Medium';node('#detail-quantity').value='1';checked=[{value:'Banana'},{value:'Cocoa'}];node('#detail-add').handlers.click();assert.equal(run('basket.length'),4);
+run("openProduct('custom-ice')");node('#detail-portion').value='Custom scoops';node('#detail-scoop-count').value='13';node('#detail-quantity').value='1';checked=[{value:'Vanilla'}];node('#detail-add').handlers.click();assert.equal(run('basket.length'),4);assert.equal(run("basket[3].customScoops"),13);
+run("openProduct('mango')");node('#detail-portion').value='Full box – 4 litres';node('#detail-quantity').value='1';node('#detail-add').handlers.click();assert.equal(run('basket.length'),5);
+run("openProduct('custom-smoothie')");node('#detail-portion').value='Medium';node('#detail-quantity').value='1';checked=[{value:'Banana'},{value:'Cocoa'}];node('#detail-add').handlers.click();assert.equal(run('basket.length'),6);
 assert.equal(run("validLine({id:'mango',portion:'Free',quantity:1,flavors:[]})"),false);
 assert.equal(run("validLine({id:'mango',portion:'1 scoop',quantity:-1,flavors:[]})"),false);
-assert.equal(JSON.parse(storage['chillos-order-v2']).length,4);
+assert.equal(JSON.parse(storage['chillos-order-v2']).length,6);
 node('#customer-name').value='Test';node('#customer-phone').value='0781234567';node('#fulfillment').value='Delivery';node('#fulfillment').handlers.change();assert.equal(node('#address').required,true);node('#address').value='Kigali test address';node('#order-form').handlers.submit({preventDefault(){}});
 const message=new URL(destination).searchParams.get('text');assert(message.includes('2 × Orange juice — Small'));assert(message.includes('1 × Orange juice — Large'));assert(message.includes('2 scoops — Mango + Vanilla'));assert(message.includes('Medium — Banana + Cocoa'));assert(!message.includes('RWF'));
 const assets=JSON.parse(run('JSON.stringify([...new Set(products.map(p=>p.image))])'));

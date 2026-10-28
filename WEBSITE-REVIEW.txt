@@ -20,7 +20,7 @@ COMPLETED
 Refined pastel storefront, larger product photography, clear category filters and progressive browsing.
 30 curated ice cream, fresh juice and smoothie ideas, including mixed combinations.
 Custom builders: 20 ice cream flavors, 15 juice ingredients and 15 smoothie ingredients.
-Ice cream scoop selection: 1–4. Juice and smoothie sizes: Small, Medium, Large.
+Ice cream selection supports fixed portions from 1–12 scoops, custom orders from 13–99 scoops, and a full 4-litre box. Juice and smoothie sizes: Small, Medium, Large.
 No fixed prices, promotional prices or per-product price labels.
 Final price depends on the complete selection and is agreed with Chillos on WhatsApp after the order is reviewed.
 Different portions and flavor combinations remain separate basket lines.
@@ -57,6 +57,7 @@ USABILITY UPDATE
 - All 30 menu ideas are visible by default; removed progressive loading.
 - Scoop choices, drink sizes, pricing process, delivery confirmation and allergy guidance are visible above the menu.
 - Added clear search reset and prominent Choose & add / Build your mix buttons.
+- Added 4-litre sharing and party-box images as illustrative gallery options.
 - Persistent quick actions offer Browse menu, Call Chillos and View order with live item count.
 - Ordering, delivery and allergy FAQ answers are expanded by default.
 - Improved touch targets and text readability. Functional checks pass.

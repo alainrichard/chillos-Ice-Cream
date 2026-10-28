@@ -5,7 +5,7 @@ const flavorOptions = {
   juices: ['Orange','Mango','Pineapple','Passion fruit','Watermelon','Apple','Lemon','Lime','Cucumber','Carrot','Beetroot','Ginger','Papaya','Guava','Tree tomato'],
   smoothies: ['Strawberry','Banana','Mango','Pineapple','Blueberry','Raspberry','Avocado','Passion fruit','Coconut','Papaya','Peach','Cocoa','Peanut butter','Oats','Vanilla']
 };
-const portions = { ice:['1 scoop','2 scoops','3 scoops','4 scoops'], juices:['Small','Medium','Large'], smoothies:['Small','Medium','Large'] };
+const portions = { ice:['1 scoop','2 scoops','3 scoops','4 scoops','5 scoops','6 scoops','7 scoops','8 scoops','9 scoops','10 scoops','11 scoops','12 scoops','Custom scoops','Full box – 4 litres'], juices:['Small','Medium','Large'], smoothies:['Small','Medium','Large'] };
 const catalogRows = [
  ['mango','Mango','ice','mango','Tropical, bright and full of sunshine.'],
  ['strawberry','Strawberry','ice','strawberry','A berry-inspired favorite for a sweet little break.'],
