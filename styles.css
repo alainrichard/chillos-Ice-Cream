@@ -39,4 +39,34 @@ body{overflow-x:hidden;background:var(--page);color:var(--ink);font-family:Inter
 @media(max-width:1100px){.wrap{width:min(960px,calc(100% - 40px))}.nav-bar{height:auto;min-height:78px}.header nav{order:3;width:100%;justify-content:center;flex-wrap:nowrap}.basket-button{margin-left:auto}.hero-grid{gap:42px}.hero h1{font-size:70px}.photo-frame img{height:430px}.gallery{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:760px){html{scroll-padding-top:82px}.wrap{width:calc(100% - 32px)}.nav-bar{gap:8px}.brand{gap:6px}.brand>span{font-size:26px}.menu-toggle{z-index:2;flex:0 0 44px}.announcement{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:9px;padding:8px 10px}.announcement .icon{width:8px;margin:0 5px}.nav-bar{height:68px;min-height:68px;flex-wrap:nowrap;padding:0}.brand img{width:48px;height:48px}.brand>span{font-size:29px}.brand-small{font-size:7px}.menu-toggle{display:inline-flex!important;width:44px;height:44px;padding:0!important;border:1px solid var(--line)!important;border-radius:9px!important;background:#fff!important;color:var(--ink)!important}.basket-button{display:none!important}.header nav{position:absolute;top:68px;left:16px;right:16px;width:auto;display:none;flex-direction:column;gap:5px;padding:10px;border:1px solid var(--line);border-radius:12px;background:var(--surface);box-shadow:0 18px 50px rgba(57,37,31,.18)}.header nav.open{display:flex}.header nav a{width:100%;justify-content:flex-start!important;min-height:46px!important;padding:12px 14px!important}.hero-grid{grid-template-columns:1fr;gap:36px;padding-top:44px;padding-bottom:56px}.hero h1{font-size:clamp(54px,17vw,72px);letter-spacing:-.045em}.hero h1 br{display:none}.spark.icon{width:.46em;height:.46em}.intro{font-size:16px}.actions{align-items:stretch;gap:12px}.actions .button{flex:1}.actions .text-link{justify-content:center;border:1px solid var(--line);border-radius:9px;padding:13px}.hero-foot{margin-top:26px}.hero-visual{max-width:520px;margin:0 auto}.photo-frame img{height:410px}.hero-seal{right:-2px;top:-16px;width:88px;height:88px;font-size:14px}.visual-star.icon{width:48px;height:48px;left:-8px}.floating-note{left:8px;bottom:17px;font-size:16px;padding:12px 16px}.flavor-ribbon{justify-content:flex-start;padding:13px 16px}.flavor-ribbon .icon:nth-of-type(3),.flavor-ribbon .icon:nth-of-type(4),.flavor-ribbon span:nth-of-type(3),.flavor-ribbon span:nth-of-type(4){display:none}.section{padding:68px 0}.section-heading{display:block;margin-bottom:30px}.section-heading h2,h2{font-size:40px}.section-heading p:not(.eyebrow){margin-top:18px}.ordering-guide{padding:16px!important}.ordering-guide>div{grid-template-columns:1fr}.menu-tools{display:block}.filters{display:grid;grid-template-columns:1fr 1fr;margin-bottom:14px}.filter{width:100%;min-height:44px;padding:10px}.search{width:100%}.menu-explainer{overflow:hidden}.menu-explainer span{min-width:33%;font-size:11px}.product-grid{grid-template-columns:1fr}.product-image{height:260px}.product-bottom{align-items:center;flex-direction:row}.story-section{padding:68px 0}.story-grid{grid-template-columns:1fr;gap:54px}.story-image{width:calc(100% - 12px);margin:0 auto}.story-image img{height:390px}.story-seal{right:-14px;bottom:-18px}.story-copy h2{font-size:40px}.gallery{grid-template-columns:1fr 1fr}.gallery button:nth-child(1),.gallery button:nth-child(4){aspect-ratio:1}.gallery button span{font-size:10px}.visit-section{padding:68px 0}.visit-grid{grid-template-columns:1fr;gap:36px}.contact-card{padding:18px}.faq-grid{grid-template-columns:1fr;gap:30px}.footer-top{flex-direction:column;align-items:flex-start;gap:28px}.footer-top>div{width:100%;display:grid;grid-template-columns:1fr 1fr}.footer-bottom{align-items:flex-start;flex-direction:column}.order-dock{bottom:8px;max-width:calc(100% - 16px);width:calc(100% - 16px)}.order-dock a,.order-dock button{flex:1;padding:10px 6px;font-size:12px}.order-dock a,.order-dock button{white-space:nowrap}dialog{width:calc(100% - 16px);max-height:calc(100vh - 16px);padding:20px}.dialog-heading h2{font-size:34px}.toast{bottom:74px;width:calc(100% - 32px)}}
 @media(max-width:430px){.hero h1{font-size:52px}.actions{display:grid;grid-template-columns:1fr}.actions .text-link{border:0;padding:10px}.photo-frame img{height:360px}.floating-note{font-size:14px}.mini-scoops i{width:8px;height:8px}.filters{grid-template-columns:1fr}.product-image{height:235px}.story-image img{height:330px}.gallery{gap:10px}.gallery button span{padding:8px}.footer-top>div{grid-template-columns:1fr}.order-dock a:first-child{display:none}.order-dock{grid-template-columns:1fr 1fr}.order-dock a,.order-dock button{min-width:0}}
+/* Keep every responsive label readable rather than clipping or forcing a width. */
+@media(max-width:760px){
+  .header nav a,.filter,.button,.text-link,.choose-button,.order-dock a,.order-dock button,dialog .button,dialog .text-button{white-space:normal!important;overflow-wrap:anywhere;word-break:normal}
+  .header nav a{line-height:1.35}
+  .menu-toggle{flex-shrink:0}
+  .brand{min-width:0}
+  .brand>span{max-width:100%;overflow-wrap:anywhere}
+  .actions .button,.actions .text-link{width:100%;min-height:48px;text-align:center}
+  .filter{height:auto;min-height:48px;line-height:1.35}
+  .choose-button{min-height:48px;height:auto;line-height:1.35}
+  .order-dock{gap:6px;flex-wrap:nowrap}
+  .order-dock a,.order-dock button{flex:1 1 0;min-width:0;min-height:46px;height:auto;white-space:normal!important;line-height:1.25;text-align:center}
+  dialog .dialog-heading{gap:12px}
+  dialog .button,dialog .text-button{min-height:48px;height:auto;line-height:1.35}
+}
+@media(max-width:430px){
+  .nav-bar{gap:6px}
+  .brand img{width:42px;height:42px}
+  .brand>span{font-size:25px}
+  .brand-small{font-size:6px}
+  .order-dock a:first-child{display:flex}
+  .order-dock a,.order-dock button{font-size:11px;padding:8px 5px}
+  dialog{padding:16px}
+}
+@media(max-width:350px){
+  .brand img{width:38px;height:38px}
+  .brand>span{font-size:22px}
+  .brand-small{letter-spacing:.1em}
+  .order-dock a:first-child{display:none}
+}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
