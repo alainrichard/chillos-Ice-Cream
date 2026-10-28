@@ -29,7 +29,7 @@ node('#customer-name').value='Test';node('#customer-phone').value='0781234567';n
 const message=new URL(destination).searchParams.get('text');assert(message.includes('2 × Orange juice — Small'));assert(message.includes('1 × Orange juice — Large'));assert(message.includes('2 scoops — Mango + Vanilla'));assert(message.includes('Medium — Banana + Cocoa'));assert(!message.includes('RWF'));
 const assets=JSON.parse(run('JSON.stringify([...new Set(products.map(p=>p.image))])'));
 for(const image of assets)assert(fs.existsSync('assets/generated/'+image+'.jpg'),'Missing '+image);
-for(const [,file] of html.matchAll(/(?:src|href)="([^"#]+)"/g))if(!/^(https:|tel:)/.test(file))assert(fs.existsSync(file),file);
+for(const [,file] of html.matchAll(/(?:src|href)="([^"#]+)"/g))if(!/^(https:|tel:)/.test(file))assert(fs.existsSync(file.split('?')[0]),file);
 console.log('Passed: 30 product ideas, search, category filtering, all products visible, portion-separated baskets, mixed flavors, scoop limits, storage, checkout, WhatsApp selections, assets, no displayed prices, synchronized HTML.');
 
 
