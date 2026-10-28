@@ -26,7 +26,7 @@ let filter = 'all', selectedProduct, toastTimer;
 function renderProducts() {
   const query = $('#search').value.trim().toLowerCase();
   const matches = products.filter(p => (filter === 'all' || p.category === filter) && `${p.name} ${p.description} ${categoryNames[p.category]} ${p.custom ? flavorOptions[p.category].join(' ') : ''}`.toLowerCase().includes(query));
-  $('#products').innerHTML = matches.map(p => `<article class="product-card"><button class="product-image image-action" data-detail="${p.id}" aria-label="Customize ${p.name}"><img src="assets/generated/${p.image}.jpg" alt="${escapeHTML(p.name)} flavor inspiration" loading="lazy" width="1254" height="1254"><span class="tag">${categoryNames[p.category]}</span></button><div class="product-info"><h3><button class="product-title" data-detail="${p.id}">${escapeHTML(p.name)}</button></h3><p>${p.description}</p><div class="product-bottom"><span>${p.category === 'ice' ? 'From one scoop · 4 litre box' : 'Small · Medium · Large'}</span><button class="choose-button" data-detail="${p.id}" aria-label="Customize ${p.name}">${p.custom ? 'Build your mix' : 'Choose & add'} <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button></div></div></article>`).join('');
+  $('#products').innerHTML = matches.map(p => `<article class="product-card"><button class="product-image image-action" data-detail="${p.id}" aria-label="Customize ${p.name}"><img src="assets/generated/${p.image}.jpg?v=20261028-2" alt="${escapeHTML(p.name)} flavor inspiration" loading="lazy" width="1254" height="1254"><span class="tag">${categoryNames[p.category]}</span></button><div class="product-info"><h3><button class="product-title" data-detail="${p.id}">${escapeHTML(p.name)}</button></h3><p>${p.description}</p><div class="product-bottom"><span>${p.category === 'ice' ? 'From one scoop · 4 litre box' : 'Small · Medium · Large'}</span><button class="choose-button" data-detail="${p.id}" aria-label="Customize ${p.name}">${p.custom ? 'Build your mix' : 'Choose & add'} <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button></div></div></article>`).join('');
   $('#no-results').hidden = matches.length > 0;
 
   $('#result-count').textContent = `${matches.length} flavor ideas · availability confirmed in chat`;
@@ -50,7 +50,7 @@ function openProduct(id) {
   selectedProduct=products.find(p=>p.id===id); if(!selectedProduct)return;
   const p=selectedProduct;
   $('#detail-title').textContent=p.name;$('#detail-description').textContent=p.description;
-  $('#detail-image').src=`assets/generated/${p.image}.jpg`;$('#detail-image').alt=`${p.name} flavor inspiration`;
+  $('#detail-image').src=`assets/generated/${p.image}.jpg?v=20261028-2`;$('#detail-image').alt=`${p.name} flavor inspiration`;
   $('#portion-label').textContent=p.category==='ice'?'How many scoops?':'Choose your drink size';
   $('#detail-portion').innerHTML=portions[p.category].map(size=>`<option>${size}</option>`).join('');
   $('#detail-quantity').value='1';$('#detail-scoop-count').value='13';$('#detail-scoop-count').hidden=p.category!== 'ice';$('#detail-scoop-count-label').hidden=p.category!== 'ice';$('#detail-error').textContent='';
