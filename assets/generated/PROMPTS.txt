@@ -1,0 +1,19 @@
+Generated using the built-in image generation tool. These are illustrative food visuals, not photographs of actual Chillos products.
+
+hero.png
+Use case: product-mockup. Asset type: original food photograph for Chillos Ice Cream website. A beautiful waffle cone with three scoops: strawberry pink, mango yellow, and mint green. Upright in an understated small cone stand. Blush pink studio backdrop, a few fresh strawberries and mango pieces at its base. Portrait composition. Premium photorealistic studio food photography, natural appetizing texture, gentle daylight from upper left, soft grounded shadows, uncluttered composition, full product centered with generous margins for cropping, consistent editorial art direction. Square image except portrait hero. No text, no logos, no watermarks, no people, no poster layouts.
+
+mango.png
+Use case: product-mockup. Asset type: original food photograph for Chillos Ice Cream website. Two rich golden mango ice cream scoops in a small cream ceramic bowl with fresh mango pieces beside it. Warm pale yellow backdrop. Premium photorealistic studio food photography, natural appetizing texture, gentle daylight from upper left, soft grounded shadows, uncluttered composition, full product centered with generous margins for cropping, consistent editorial art direction. Square image except portrait hero. No text, no logos, no watermarks, no people, no poster layouts.
+
+strawberry.png
+Use case: product-mockup. Asset type: original food photograph for Chillos Ice Cream website. Two strawberry pink ice cream scoops in a cream ceramic bowl with fresh strawberries beside it. Soft blush backdrop. Premium photorealistic studio food photography, natural appetizing texture, gentle daylight from upper left, soft grounded shadows, uncluttered composition, full product centered with generous margins for cropping, consistent editorial art direction. Square image except portrait hero. No text, no logos, no watermarks, no people, no poster layouts.
+
+soft-serve.png
+Use case: product-mockup. Asset type: original food photograph for Chillos Ice Cream website. Vanilla and chocolate soft serve twisted together in a crisp waffle cone standing in a small minimal holder. Pale peach backdrop. Premium photorealistic studio food photography, natural appetizing texture, gentle daylight from upper left, soft grounded shadows, uncluttered composition, full product centered with generous margins for cropping, consistent editorial art direction. Square image except portrait hero. No text, no logos, no watermarks, no people, no poster layouts.
+
+chocolate.png
+Use case: product-mockup. Asset type: original food photograph for Chillos Ice Cream website. Two dark chocolate ice cream scoops in a cream ceramic bowl, small dark chocolate pieces beside it. Warm beige backdrop. Premium photorealistic studio food photography, natural appetizing texture, gentle daylight from upper left, soft grounded shadows, uncluttered composition, full product centered with generous margins for cropping, consistent editorial art direction. Square image except portrait hero. No text, no logos, no watermarks, no people, no poster layouts.
+
+mint.png
+Use case: product-mockup. Asset type: original food photograph for Chillos Ice Cream website. Two pale mint green ice cream scoops in a cream ceramic bowl with a small sprig of fresh mint beside it. Soft pastel green backdrop. Premium photorealistic studio food photography, natural appetizing texture, gentle daylight from upper left, soft grounded shadows, uncluttered composition, full product centered with generous margins for cropping, consistent editorial art direction. Square image except portrait hero. No text, no logos, no watermarks, no people, no poster layouts.

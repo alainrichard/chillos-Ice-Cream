@@ -1,0 +1,62 @@
+﻿CHILLOS WEBSITE — CURRENT HANDOVER
+Updated: 28 October 2026
+
+OPEN THE SITE
+Open index.html directly, or run node preview.cjs and visit http://127.0.0.1:4173.
+No installation or build is needed. Stop the local preview with Ctrl+C.
+
+FILES
+index.html: storefront layout and content.
+styles.css: responsive styling, separate from HTML.
+catalog.js: product ideas, flavor choices and scoop/size options.
+script.js: filtering, search, product customization, basket and WhatsApp handoff.
+assets/generated/: 23 original generated images, compressed JPG website copies and PNG originals.
+assets/generated/*PROMPTS.txt: exact image prompts and built-in generation-tool provenance.
+check.cjs: functional checks. Run node check.cjs.
+The original long HTML filename mirrors index.html. Keep both synchronized when editing.
+When copying the site, include index.html, styles.css, catalog.js, script.js and assets.
+
+COMPLETED
+Refined pastel storefront, larger product photography, clear category filters and progressive browsing.
+30 curated ice cream, fresh juice and smoothie ideas, including mixed combinations.
+Custom builders: 20 ice cream flavors, 15 juice ingredients and 15 smoothie ingredients.
+Ice cream scoop selection: 1–4. Juice and smoothie sizes: Small, Medium, Large.
+No fixed prices, promotional prices or per-product price labels.
+Final price depends on scoops or drink size and is confirmed by Chillos in chat.
+Different portions and flavor combinations remain separate basket lines.
+Quantity controls, removal, browser basket storage, pickup/delivery fields and phone validation.
+WhatsApp message includes servings, scoop count or size, custom flavors and delivery details.
+Package-supplied logo retained. Screenshot photos are not referenced by the website.
+Photo assets visually inspected; all 23 website JPGs total approximately 4.15 MB.
+
+VERIFICATION
+Passed node --check catalog.js, node --check script.js and node check.cjs.
+Checks cover filtering, search, pagination, portion-separated basket lines, mixed flavors,
+scoop limits, saved basket data, checkout details, WhatsApp formatting, image paths,
+absence of displayed prices and synchronization of both HTML files.
+Browser visual/responsive testing was unavailable; review on real devices before launch.
+No live message was sent and no order/payment was placed during testing.
+
+BUSINESS CONTENT
+The expanded collection presents flavor ideas and requests, not verified daily stock.
+Confirm actual availability, ingredients, serving volumes, scoop rules and custom-blend limits.
+Images are AI-generated illustrations, not photographs of actual servings or premises.
+Existing business contacts come from the earlier supplied material; verify current phone,
+social links, exact map pin, opening hours and delivery rules before launch.
+
+REQUIREMENTS REVIEW
+The supplied starter ZIP contains a logo, concept image and requirements DOCX, not backend code.
+This implementation is a static storefront with a WhatsApp order-request flow.
+Secure staff authentication, database, persistent order records, order status history,
+product/promotion administration, payment processing and sales reporting are not implemented.
+Production hosting/domain, absolute social-preview URL, sitemap, operational privacy policy,
+backup arrangements and complete backend/admin scope remain separate launch work.
+Opening WhatsApp does not mean an order has been received, accepted or paid.
+
+USABILITY UPDATE
+- All 30 menu ideas are visible by default; removed progressive loading.
+- Scoop choices, drink sizes, pricing process, delivery confirmation and allergy guidance are visible above the menu.
+- Added clear search reset and prominent Choose & add / Build your mix buttons.
+- Persistent quick actions offer Browse menu, Call Chillos and View order with live item count.
+- Ordering, delivery and allergy FAQ answers are expanded by default.
+- Improved touch targets and text readability. Functional checks pass.

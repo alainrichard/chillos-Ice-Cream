@@ -1,0 +1,7 @@
+Built-in image generation tool. Illustrative images; actual drinks may differ.
+
+fresh-juice.png
+Use case: product-mockup. Asset type: original drink photograph for Chillos website. A tall clear glass of bright golden orange fresh fruit juice with small condensation droplets, orange halves and mango pieces beside it, pale warm yellow studio backdrop. Premium photorealistic studio food photography matching a pastel ice cream collection. Gentle daylight from upper left, natural texture, grounded soft shadows, clean uncluttered composition. Entire glass centered and fully visible with generous margins, square format. No text, logos, watermark, people, or poster layout.
+
+smoothie.png
+Use case: product-mockup. Asset type: original drink photograph for Chillos website. A clear tall glass of thick creamy strawberry and banana smoothie, blush pink color, a reusable straw, strawberries and banana slices beside the glass, soft pastel mint green studio backdrop. Premium photorealistic studio food photography matching a pastel ice cream collection. Gentle daylight from upper left, natural texture, grounded soft shadows, clean uncluttered composition. Entire glass centered and fully visible with generous margins, square format. No text, logos, watermark, people, or poster layout.
