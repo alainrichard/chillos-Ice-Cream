@@ -20,7 +20,7 @@ run("openProduct('orange-juice')");node('#detail-portion').value='Large';node('#
 run("openProduct('custom-ice')");node('#detail-portion').value='2 scoops';node('#detail-quantity').value='1';checked=[{value:'Vanilla'},{value:'Mango'},{value:'Chocolate'}];node('#detail-add').handlers.click();assert.equal(run('basket.length'),2);assert(node('#detail-error').textContent);
 checked=[{value:'Vanilla'},{value:'Mango'}];node('#detail-add').handlers.click();assert.equal(run('basket.length'),3);
 run("openProduct('custom-ice')");node('#detail-portion').value='Custom scoops';node('#detail-scoop-count').value='13';node('#detail-quantity').value='1';checked=[{value:'Vanilla'}];node('#detail-add').handlers.click();assert.equal(run('basket.length'),4);assert.equal(run("basket[3].customScoops"),13);
-run("openProduct('mango')");node('#detail-portion').value='Full box – 4 litres';node('#detail-quantity').value='1';node('#detail-add').handlers.click();assert.equal(run('basket.length'),5);
+run("openProduct('mango')");node('#detail-portion').value='Full box – 4 litres';node('#detail-portion').handlers.change();assert(node('#detail-image').src.includes('four-litre-box.jpg'));assert(node('#detail-image').alt.includes('4 litre sharing box'));node('#detail-portion').value='1 scoop';node('#detail-portion').handlers.change();assert(node('#detail-image').src.includes('mango.jpg'));node('#detail-portion').value='Full box – 4 litres';node('#detail-portion').handlers.change();node('#detail-quantity').value='1';node('#detail-add').handlers.click();assert.equal(run('basket.length'),5);
 run("openProduct('custom-smoothie')");node('#detail-portion').value='Medium';node('#detail-quantity').value='1';checked=[{value:'Banana'},{value:'Cocoa'}];node('#detail-add').handlers.click();assert.equal(run('basket.length'),6);
 assert.equal(run("validLine({id:'mango',portion:'Free',quantity:1,flavors:[]})"),false);
 assert.equal(run("validLine({id:'mango',portion:'1 scoop',quantity:-1,flavors:[]})"),false);
@@ -31,5 +31,4 @@ const assets=JSON.parse(run('JSON.stringify([...new Set(products.map(p=>p.image)
 for(const image of assets)assert(fs.existsSync('assets/generated/'+image+'.jpg'),'Missing '+image);
 for(const [,file] of html.matchAll(/(?:src|href)="([^"#]+)"/g))if(!/^(https:|tel:)/.test(file))assert(fs.existsSync(file.split('?')[0]),file);
 console.log('Passed: 30 product ideas, search, category filtering, all products visible, portion-separated baskets, mixed flavors, scoop limits, storage, checkout, WhatsApp selections, assets, no displayed prices, synchronized HTML.');
-
 

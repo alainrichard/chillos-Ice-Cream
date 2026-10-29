@@ -66,9 +66,15 @@ function selectedScoopCount(){
 }
 function updatePortionDetails(){
   if(!selectedProduct)return;
-  const custom=$('#detail-portion').value==='Custom scoops';
+  const portion=$('#detail-portion').value;
+  const custom=portion==='Custom scoops';
   $('#detail-scoop-count-label').hidden=selectedProduct.category!== 'ice'||!custom;
   $('#detail-scoop-count').hidden=!custom;
+  const fullBox=selectedProduct.category==='ice'&&portion==='Full box – 4 litres';
+  $('#detail-image').src=fullBox
+    ?'assets/generated/four-litre-box.jpg?v=20261029-1'
+    :`assets/generated/${selectedProduct.image}.jpg?v=20261028-3`;
+  $('#detail-image').alt=fullBox?'Chillos 4 litre sharing box photo':`${selectedProduct.name} flavor inspiration`;
 }
 function updateMixHint(){
   if(!selectedProduct)return;
