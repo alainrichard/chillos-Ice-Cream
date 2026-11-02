@@ -44,3 +44,7 @@ Use case: product-mockup. Original premium food photography for Chillos website.
 
 chocolate-smoothie.png
 Use case: product-mockup. Original premium food photography for Chillos website. Tall clear glass of thick cocoa banana smoothie, cocoa and banana slices, warm beige backdrop. Square composition with full bowl or glass centered and completely visible, generous breathing room, eye-level three-quarter angle. Soft daylight from upper left, realistic appetizing textures, clean pastel studio styling, subtle grounded shadows. No words, logos, watermark, people, borders, collages or poster designs.
+
+29 October 2026: four-litre-box.jpg replaced using built-in image generation. Photorealistic fictional Chillos 4 litre white plastic sharing tub, supplied package-logo.png as brand reference, open vanilla/strawberry/chocolate sections, lid behind, cream tabletop, raspberry label with 4 LITRES and SHARING BOX. AI packaging mockup, not an actual product photograph.
+
+29 October 2026: four-litre-party.jpg replaced using built-in image generation. References: package-logo.png, matching four-litre-box.jpg, previous party illustration. Photorealistic fictional Chillos 4 litre white rectangular plastic party tub, open vanilla/strawberry/chocolate sections, lid behind, raspberry label reading 4 LITRES and PARTY BOX, cream tabletop, pastel dessert cups, wooden spoons, confetti and blurred bunting. Square natural daylight food photography mockup; not an actual product photograph.
