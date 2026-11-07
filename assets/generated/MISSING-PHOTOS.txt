@@ -1,0 +1,32 @@
+Products that still borrow another product's photo.
+Generate each image below, save it as a .jpg in assets/generated/ (square, about 1024x1024),
+then change the image name for that product in catalog.js (4th value in its row).
+Style must match the existing set: same lighting, pastel backdrop, no text or logos
+(the Chillos logo is added afterwards, like the other photos).
+
+Shared style line (append to every prompt):
+Premium photorealistic studio food photography matching a pastel ice cream collection. Gentle daylight from upper left, natural texture, grounded soft shadows, clean uncluttered composition. Entire glass centered and fully visible with generous margins, square format. No text, logos, watermark, people, or poster layout.
+
+orange-juice.jpg   -> catalog id 'orange-juice' (currently uses fresh-juice)
+A tall clear glass of freshly squeezed orange juice with condensation droplets, orange halves and an orange slice beside it, soft pale peach studio backdrop.
+
+mango-juice.jpg   -> catalog id 'mango-juice' (currently uses tropical-juice)
+A tall clear glass of smooth golden mango juice, a cubed mango hedgehog and mango slices beside it, soft warm yellow studio backdrop.
+
+citrus-juice.jpg   -> catalog id 'citrus-juice' (currently uses pineapple-juice)
+A tall clear glass of orange and pineapple juice, half an orange and a pineapple wedge beside it, soft pastel coral studio backdrop.
+
+custom-juice.jpg   -> catalog id 'custom-juice' (currently uses fresh-juice)
+Three small clear glasses of different fresh juices (carrot orange, beetroot red, tree tomato) on a light wooden board with ginger, guava and carrot beside them, soft cream studio backdrop.
+
+tropical-smoothie.jpg   -> catalog id 'tropical-smoothie' (currently uses mango-smoothie)
+A clear tall glass of thick creamy mango and pineapple smoothie, a reusable straw, pineapple chunks and mango cubes beside it, soft pastel aqua studio backdrop.
+
+coconut-smoothie.jpg   -> catalog id 'coconut-smoothie' (currently uses mango-smoothie)
+A clear tall glass of thick creamy pale banana and coconut smoothie topped with toasted coconut flakes, an opened coconut half and banana slices beside it, soft pastel sand studio backdrop.
+
+passion-smoothie.jpg   -> catalog id 'passion-smoothie' (currently uses mango-smoothie)
+A clear tall glass of thick creamy golden mango and passion fruit smoothie with passion fruit seeds on top, halved passion fruits and mango cubes beside it, soft pastel lilac studio backdrop.
+
+custom-smoothie.jpg   -> catalog id 'custom-smoothie' (currently uses berry-smoothie)
+Three small clear glasses of different thick smoothies (peach, papaya, peanut butter and oat) on a light wooden board with oats, peach slices and papaya beside them, soft cream studio backdrop.

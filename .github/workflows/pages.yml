@@ -31,12 +31,13 @@ jobs:
         run: |
           node --check catalog.js
           node --check script.js
+          node --check customer-tools.js
           node check.cjs
       - name: Prepare public files
         run: |
           mkdir -p _site/assets/generated
-          cp index.html styles.css catalog.js script.js _site/
-          cp assets/package-logo.png _site/assets/
+          cp index.html styles.css catalog.js script.js customer-tools.js _site/
+          cp assets/logo.webp _site/assets/
           cp assets/generated/*.jpg _site/assets/generated/
           touch _site/.nojekyll
       - name: Setup Pages
